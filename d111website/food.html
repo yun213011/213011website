@@ -17,6 +17,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -28,6 +29,17 @@
 	height: 50px;
 	width: 1280px;
 }
+.titlestyle {
+	font-family: "微軟正黑體";
+	font-size: 24px;
+	color: #069;
+	text-align: center;
+	font-weight: bold;
+}
+.textstyle {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -36,7 +48,35 @@
 <body>
 <div id="container">
   <div id="header"><img src="images/food.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="953" height="598" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2" bgcolor="#FF9900" class="titlestyle">阿波鴨肉麵</td>
+      </tr>
+      <tr>
+        <td width="660" height="188"><p>嘉義美食推薦這家阿波鴨肉麵，說到嘉義美食大家應該都會聯想到火雞肉飯，在遍地火雞夾擊之下，竟然有『鴨店』獨樹一格，今天要介紹這家阿波鴨肉麵可以說是嘉義在地人都非常喜歡的小吃店，雖論資排排名在嘉義美食圈算不上歷史悠久（但也有三十年歷史），但其獨創口味及好味道可是深受不少在地人的喜愛呢，而且超便宜！一碗鴨肉麵竟然只要40元啊！</p>
+        <p>資料來源：嘉義旅遊網</p></td>
+        <td width="294"><img src="images/阿波.jpg" width="289" height="180" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#66CCFF" class="titlestyle">阿桃烤玉米</td>
+      </tr>
+      <tr>
+        <td height="146"><p class="textstyle">阿桃烤玉米還可以選軟硬度，我選比較硬的，一支70元還蠻大根的，拿到熱呼呼的烤玉米，玉米不斷的散發炭烤醬料的濃郁香氣，還有類似爆米花及麻醬的味道，醬汁越吃越有味道，白玉米還有些許的水份，入口隱約還能嘗到玉米的甜度，加上稍硬帶有彈性口感，古早味烤玉米的味道！</p>          <p class="textstyle">資料來源：嘉義旅遊網
+        </p></td>
+        <td><img src="images/阿桃.jpg" width="293" height="154" /></td>
+      </tr>
+      <tr>
+        <td height="19" colspan="2" bgcolor="#FFCC00" class="titlestyle">御香屋</td>
+      </tr>
+      <tr>
+        <td height="204"><p class="textstyle">&nbsp;</p>
+          <p class="textstyle">御香屋招牌葡萄柚綠，一杯 $60 元，可以調整糖冰，不過店員說糖最低是 2 分糖，大概是怕甜度不夠，而讓整體的飲料風味不足，所以才設定了糖度下限；梅子也可以選擇要加或不加，不過大小只有中杯可以選。這次在離峰時間來，所以點餐後一下子就拿到了飲料，如果是尖峰時段的話，建議要在一小時前先打電話預定比較保險。御香屋招牌葡萄柚綠，一杯 $60 元，可以調整糖冰，不過店員說糖最低是 2 分糖，大概是怕甜度不夠，而讓整體的飲料風味不足，所以才設定了糖度下限；梅子也可以選擇要加或不加，不過大小只有中杯可以選。這次在離峰時間來，所以點餐後一下子就拿到了飲料，如果是尖峰時段的話，建議要在一小時前先打電話預定比較保險。</p>
+        <p class="textstyle">資料來源：Daisy Yohoho</p></td>
+        <td><img src="images/御香屋1.jpg" width="294" height="193" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item">
     <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="food.html">美食</a>      </li>

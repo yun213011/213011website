@@ -50,9 +50,14 @@
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
 <script type="text/javascript">
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
 }
 </script>
 </head>
@@ -89,8 +94,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         <p class="textstyle">資料來源:阿里山國家風景區網站 <a href="#top">top</a></p></td>
       </tr>
       <tr>
-        <td width="465" align="center"><img src="images/太平雲梯2.jpg" width="248" height="260" onclick="MM_openBrWindow('images/太平雲梯2b.jpg','','width=800,height=600')" /></td>
-        <td width="524" align="center" onfocus="MM_openBrWindow('images/嘉義太平雲梯1b-scaled.jpg','','width=800,height=600')"><img src="images/嘉義太平雲梯1-scaled.jpg" name="A02" width="313" height="239" id="A02" onclick="MM_openBrWindow('images/嘉義太平雲梯1b-scaled.jpg','','width=800,height=600')" /></td>
+        <td width="465" align="center"><img src="images/太平雲梯2.jpg" width="248" height="260" onclick="MM_openBrWindow('images/太平雲梯2b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td width="524" align="center" onfocus="MM_openBrWindow('images/嘉義太平雲梯1b-scaled.jpg','','width=800,height=600')"><img src="images/嘉義太平雲梯1-scaled.jpg" name="A02" width="313" height="239" id="A02" onclick="MM_openBrWindow('images/嘉義太平雲梯1b-scaled.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
       </tr>
       <tr>
         <td colspan="2" bgcolor="#CCFF66"><p class="titlestyle"><a name="a02" id="a02"></a>冷研探索館 </p></td>
@@ -110,8 +115,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         <p class="textstyle">資料來源：冷研探索館網站<a href="#top"> top</a></p></td>
       </tr>
       <tr>
-        <td align="center"><img src="images/冷研1.jpg" name="B01" width="300" height="192" id="B01" onclick="MM_openBrWindow('images/冷研1b.jpg','','width=800,height=600')" /></td>
-        <td align="center"><img src="images/冷研.jpg" name="B02" width="319" height="203" id="B02" onclick="MM_openBrWindow('images/冷研.jpg','','width=800,height=600')" /></td>
+        <td align="center"><img src="images/冷研1.jpg" name="B01" width="300" height="192" id="B01" onclick="MM_openBrWindow('images/冷研1b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/冷研.jpg" name="B02" width="319" height="203" id="B02" onclick="MM_openBrWindow('images/冷研.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
       </tr>
       <tr>
         <td colspan="2" bgcolor="#FFFFCC"><p class="titlestyle"><a name="a03" id="a03"></a>KANO園區 </p></td>
@@ -124,8 +129,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         <p class="textstyle">資料來源:嘉義旅遊網<a href="#top"> top</a></p></td>
       </tr>
       <tr>
-        <td align="center"><img src="images/kano.jpg" name="C01" width="300" height="200" id="C01" onclick="MM_openBrWindow('images/kanob.jpg','','width=800,height=600')" /></td>
-        <td align="center"><img src="images/kano1.jpg" name="C02" width="310" height="204" id="C02" onclick="MM_openBrWindow('images/kano1b.jpg','','width=800,height=600')" /></td>
+        <td align="center"><img src="images/kano.jpg" name="C01" width="300" height="200" id="C01" onclick="MM_openBrWindow('images/kanob.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/kano1.jpg" name="C02" width="310" height="204" id="C02" onclick="MM_openBrWindow('images/kano1b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
       </tr>
       <tr>
         <td colspan="2" bgcolor="#FFCC00"><p class="titlestyle"><a name="a04" id="a04"></a>檜意生活村 </p></td>
@@ -146,8 +151,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         <p class="textstyle">資料來源:檜意森活村網站 <a href="#top">top</a></p></td>
       </tr>
       <tr>
-        <td align="center"><img src="images/檜意.jpg" name="D01" width="300" height="200" id="D01" onclick="MM_openBrWindow('images/檜意b.jpg','','width=800,height=600')" /></td>
-        <td align="center"><img src="images/檜意1.jpg" name="D02" width="319" height="192" id="D02" onclick="MM_openBrWindow('images/檜意1b.jpg','','width=800,height=600')" /></td>
+        <td align="center"><img src="images/檜意.jpg" name="D01" width="300" height="200" id="D01" onclick="MM_openBrWindow('images/檜意b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/檜意1.jpg" name="D02" width="319" height="192" id="D02" onclick="MM_openBrWindow('images/檜意1b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
       </tr>
     </table>
     

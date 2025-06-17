@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>美食</title>
+<title>關於我</title>
 <style type="text/css">
 #container {
 	width: 1280px;
@@ -32,7 +32,7 @@
 .titlestyle {
 	font-family: "微軟正黑體";
 	font-size: 24px;
-	color: #069;
+	color: #000;
 	text-align: center;
 }
 .textstyle {
@@ -41,13 +41,57 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/About Me.jpg" width="1280" height="150" /></div>
   <div id="article">
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">基本資料</div>
+        <div class="AccordionPanelContent">
+          <table width="804" height="179" border="0" align="center">
+            <tr>
+              <td colspan="2"><center><img src="images/個人照.png" width="300" height="450" /></center></td>
+            </tr>
+            <tr class="titlestyle">
+              <td width="399" bgcolor="#CCCCFF" class="titlestyle">個人資料</td>
+              <td width="395" bgcolor="#CCCCFF">學經歷</td>
+            </tr>
+            <tr class="textstyle">
+              <td align="center" valign="middle"><p>姓名：鄭喬勻</p>
+              <p>性別：女</p>
+              <p>Ｅ-Mail：11213011@gm.hnvs.cy.edu.tw</p>
+              <p>興趣：追劇、競啦</p></td>
+              <td align="center" valign="middle"><p>博愛國小</p>
+              <p>北興國中</p>
+              <p>華南高商</p>
+              <p>幹部：高一上　衛生股長</p>
+              <p>　　　 高一下　學藝股長</p>
+              <p>社團：高一　電影欣賞社</p>
+              <p>　　　 高二　投資理財社</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">設計理念</div>
+        <div class="AccordionPanelContent">
+          <p class="textstyle">嘉義市在南部是個小城市，但它有許多的特色小吃，例如：火雞肉飯、鳳梨酥...，這些都是大家一提到嘉義就會想到的小吃，其實還有其他的，雖然不是特色小吃，但他們都是嘉義在地人的口袋名單，近年來，嘉義新開了許多的特色飯店，例如:有結合阿里山意象:日出、山嵐、檜木…等自然素材的天成文旅-繪日之丘、有優雅的中國古董家具和獨特的藝術裝飾且鄰近文化路夜市的蘭桂坊花園酒店...，除了小吃、住宿，還有許多玩樂的地方，例如:乘載了嘉義百年林業歷史，保存著當年日治時代留下的歷史及回憶，日式風格庭園加上名列市嘉義定古蹟的日式木造建築群的檜意生活村、全台首家以氣體為主題的觀光工廠冷研探索館...。</p>
+          <p class="textstyle">內容介紹著許多嘉義在地人推薦小吃的口袋名單、有特色的飯店及記載著日治時期的建築與歷史。</p>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">學習反思</div>
+        <div class="textstyle">
+          <p>在這學期的網頁設計中，先利用Photolmpact製作網頁首頁及各頁面的標題背景，再把這些圖片放入到Dreamweaver網站中，製作一個完整的網站，在這裡面是幾乎不用寫程式碼的，只需要設定，它就會自動幫你寫好程式，對於不會寫程式的人來說是個很方便的應用程式，且在裡面學習到如何用Div標籤、CSS、表格...，雖然在其他課程也有學習到Dreamweaver，但因為時間有限，所以沒有辦法自己實際設計一個網站，只能照著課本做，無法了解其他功能。而在未來自己也可以利用Dreamweaver，幫家人、朋友...，設計、製作網站。</p>
+        </div>
+      </div>
+    </div>
   
   </div>
   <div id="item">
@@ -64,6 +108,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
 </script>
 </body>
 </html>
